@@ -14,7 +14,7 @@ private val requestedPosters: MutableMap<String, Instant> = mutableMapOf()
 private val requestTimeout = 10.seconds
 
 fun tickPosterRequests(world: ClientWorld) {
-  val batch = posterRequestQueue.take(ScPeripheralsClientConfig.config["maxPosterRequestsPerTick"])
+  val batch = posterRequestQueue.take(ScPeripheralsClientConfig.getConfig()["maxPosterRequestsPerTick"])
   if (batch.isNotEmpty()) {
     MinecraftClient.getInstance().player?.networkHandler?.sendPacket(PosterRequestC2SPacket(batch).toC2SPacket())
 

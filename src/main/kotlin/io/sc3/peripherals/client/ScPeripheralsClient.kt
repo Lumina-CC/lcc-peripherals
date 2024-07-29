@@ -38,7 +38,7 @@ object ScPeripheralsClient : ClientModInitializer {
     log.info("lcc-peripherals client initializing")
 
     // Initialize the default config file if it does not yet exist
-    ScPeripheralsClientConfig.config.load()
+    ScPeripheralsClientConfig.getConfig().load()
 
     BlockEntityRendererRegistry.register(Registration.ModBlockEntities.printer) { PrinterRenderer }
     BlockEntityRendererRegistry.register(Registration.ModBlockEntities.posterPrinter) { PosterPrinterRenderer }
