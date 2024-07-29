@@ -1,6 +1,6 @@
 package io.sc3.peripherals.client.gui
 
-import io.sc3.peripherals.ScPeripherals.ModId
+import io.sc3.peripherals.ScPeripherals
 import io.sc3.peripherals.ScPeripherals.modId
 import io.sc3.peripherals.posters.printer.PosterPrinterScreenHandler
 import io.sc3.peripherals.prints.printer.PrinterBlockEntity.Companion.maxInk
@@ -49,7 +49,7 @@ class PosterPrinterScreen(
   }
 
   companion object {
-    val tex = ModId("textures/gui/container/poster_printer.png")
+    val tex = ScPeripherals.INSTANCE.ModId("textures/gui/container/poster_printer.png")
 
     const val inkU = 177
     const val inkV = 1

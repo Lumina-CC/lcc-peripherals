@@ -1,5 +1,6 @@
 package io.sc3.peripherals.util
 
+import io.sc3.peripherals.ScPeripherals
 import net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking
 import net.fabricmc.fabric.api.networking.v1.PacketByteBufs
 import net.fabricmc.fabric.api.networking.v1.ServerPlayNetworking.createS2CPacket
@@ -7,7 +8,6 @@ import net.minecraft.network.PacketByteBuf
 import net.minecraft.network.listener.ClientPlayPacketListener
 import net.minecraft.network.packet.s2c.play.ScreenHandlerPropertyUpdateS2CPacket
 import net.minecraft.server.network.ServerPlayNetworkHandler
-import io.sc3.peripherals.ScPeripherals.ModId
 
 class ScreenHandlerPropertyUpdateIntS2CPacket(
   syncId: Int,
@@ -37,7 +37,7 @@ class ScreenHandlerPropertyUpdateIntS2CPacket(
   }
 
   companion object {
-    val id = ModId("screen-handler-property-update-int")
+    val id = ScPeripherals.INSTANCE.ModId("screen-handler-property-update-int")
 
     fun registerReceiver() {
       ClientPlayNetworking.registerGlobalReceiver(id) { client, handler, buf, _ ->

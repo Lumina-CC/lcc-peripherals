@@ -6,7 +6,7 @@ import net.minecraft.client.network.ClientPlayNetworkHandler
 import net.minecraft.network.PacketByteBuf
 import net.minecraft.util.math.BlockPos
 import io.sc3.library.networking.ScLibraryPacket
-import io.sc3.peripherals.ScPeripherals.ModId
+import io.sc3.peripherals.ScPeripherals
 import io.sc3.peripherals.prints.PrintData
 
 data class PrinterDataPacket(
@@ -16,7 +16,7 @@ data class PrinterDataPacket(
   override val id = PrinterDataPacket.id
 
   companion object {
-    val id = ModId("printer_data")
+    val id = ScPeripherals.INSTANCE.ModId("printer_data")
 
     fun fromBytes(buf: PacketByteBuf) = PrinterDataPacket(
       pos = buf.readBlockPos(),

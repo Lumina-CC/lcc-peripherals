@@ -6,7 +6,7 @@
         "items": [
           {
             "items": [
-              "sc-peripherals:printer"
+              "lcc-peripherals:printer"
             ]
           }
         ]
@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "sc-peripherals:ink_cartridge"
+        "recipe": "lcc-peripherals:ink_cartridge"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "sc-peripherals:ink_cartridge"
+      "lcc-peripherals:ink_cartridge"
     ]
   },
   "sends_telemetry_event": false

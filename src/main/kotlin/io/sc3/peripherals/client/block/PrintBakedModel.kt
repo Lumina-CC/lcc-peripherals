@@ -3,7 +3,7 @@ package io.sc3.peripherals.client.block
 import io.sc3.library.ext.faces
 import io.sc3.library.ext.rotateTowards
 import io.sc3.peripherals.Registration.ModBlockEntities
-import io.sc3.peripherals.ScPeripherals.ModId
+import io.sc3.peripherals.ScPeripherals
 import io.sc3.peripherals.prints.*
 import net.fabricmc.fabric.api.renderer.v1.RendererAccess
 import net.fabricmc.fabric.api.renderer.v1.mesh.Mesh
@@ -160,7 +160,7 @@ class PrintBakedModel(
   class NoPrintDataException : IllegalArgumentException("No print data found")
 
   companion object {
-    private val reloadId = ModId("print_baked_model_cache_reloader")
+    private val reloadId = ScPeripherals.INSTANCE.ModId("print_baked_model_cache_reloader")
 
     // TODO: Tune these caches
     private val meshCache = object : Cache2kBuilder<ShapesFacing, Mesh>() {}
@@ -181,7 +181,7 @@ class PrintBakedModel(
       itemCache.clear()
 
       MinecraftClient.getInstance().player?.sendMessage(literal("")
-        .append(literal("[sc-peripherals] ").formatted(YELLOW, BOLD))
+        .append(literal("[lcc-peripherals] ").formatted(YELLOW, BOLD))
         .append(literal("Cleared $count cached 3d print models")), false)
     }
 

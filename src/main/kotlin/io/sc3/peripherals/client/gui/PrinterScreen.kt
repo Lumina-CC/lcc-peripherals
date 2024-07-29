@@ -1,6 +1,6 @@
 package io.sc3.peripherals.client.gui
 
-import io.sc3.peripherals.ScPeripherals.ModId
+import io.sc3.peripherals.ScPeripherals
 import io.sc3.peripherals.ScPeripherals.modId
 import io.sc3.peripherals.prints.printer.PrinterBlockEntity.Companion.maxChamelium
 import io.sc3.peripherals.prints.printer.PrinterBlockEntity.Companion.maxInk
@@ -54,7 +54,7 @@ class PrinterScreen(
   }
 
   companion object {
-    val tex = ModId("textures/gui/container/printer.png")
+    val tex = ScPeripherals.INSTANCE.ModId("textures/gui/container/printer.png")
 
     const val chameliumU = 1
     const val chameliumV = 205

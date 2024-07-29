@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "sc-peripherals:item/texture_analyzer"
+    "layer0": "lcc-peripherals:item/texture_analyzer"
   }
 }

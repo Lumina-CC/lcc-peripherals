@@ -9,7 +9,7 @@ import dan200.computercraft.api.lua.MethodResult.of
 import dan200.computercraft.api.peripheral.IComputerAccess
 import dan200.computercraft.api.peripheral.IPeripheral
 import io.sc3.library.ext.intBox
-import io.sc3.peripherals.config.ScPeripheralsConfig.config
+import io.sc3.peripherals.config.ScPeripheralsConfig
 import io.sc3.peripherals.prints.PrintData
 import io.sc3.peripherals.prints.Shape
 import io.sc3.peripherals.util.InventoryPeripheral
@@ -22,7 +22,7 @@ import java.util.*
 class PrinterPeripheral(val be: PrinterBlockEntity) : InventoryPeripheral(be) {
   override fun getType() = "3d_printer"
   override fun getTarget() = be
-
+  var config = ScPeripheralsConfig.getConfig();
   @LuaFunction(mainThread = true)
   fun reset() {
     be.data = PrintData()
@@ -211,7 +211,7 @@ class PrinterPeripheral(val be: PrinterBlockEntity) : InventoryPeripheral(be) {
   companion object {
     private const val printStatusEvent = "3d_printer_state" // args: status:string
     private const val printCompleteEvent = "3d_printer_complete" // args: remaining:number
-
+    var config = ScPeripheralsConfig.getConfig();
     val maxBaseLightLevel: Int = config.get("printer.max_base_light_level")
     val maxShapes: Int = config.get("printer.max_shapes")
 

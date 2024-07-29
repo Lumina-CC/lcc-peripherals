@@ -3,7 +3,7 @@
   "category": "misc",
   "ingredients": [
     {
-      "item": "sc-peripherals:empty_ink_cartridge"
+      "item": "lcc-peripherals:empty_ink_cartridge"
     },
     {
       "tag": "c:cyan_dyes"
@@ -19,6 +19,6 @@
     }
   ],
   "result": {
-    "item": "sc-peripherals:ink_cartridge"
+    "item": "lcc-peripherals:ink_cartridge"
   }
 }

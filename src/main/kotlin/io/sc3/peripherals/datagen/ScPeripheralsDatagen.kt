@@ -9,7 +9,7 @@ object ScPeripheralsDatagen : DataGeneratorEntrypoint {
   private val log = LoggerFactory.getLogger("ScPeripherals/ScPeripheralsDatagen")!!
 
   override fun onInitializeDataGenerator(generator: FabricDataGenerator) {
-    log.info("sc-peripherals datagen initializing")
+    log.info("lcc-peripherals datagen initializing")
 
     val pack = generator.createPack()
     pack.addProvider(::ModelProvider)

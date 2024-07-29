@@ -6,7 +6,7 @@ import io.sc3.library.WaterloggableBlock.Companion.waterlogged
 import io.sc3.peripherals.Registration.ModBlockEntities
 import io.sc3.peripherals.Registration.ModBlocks
 import io.sc3.peripherals.Registration.ModItems
-import io.sc3.peripherals.ScPeripherals.ModId
+import io.sc3.peripherals.ScPeripherals
 import io.sc3.peripherals.util.BaseBlockWithEntity
 import net.minecraft.block.Block
 import net.minecraft.block.BlockState
@@ -177,9 +177,9 @@ class PrintBlock(settings: Settings) : BaseBlockWithEntity(settings), Waterlogga
       )
 
   companion object {
-    val id = ModId("block/print")
+    val id = ScPeripherals.INSTANCE.ModId("block/print")
 
-    val dropId = ModId("print")
+    val dropId = ScPeripherals.INSTANCE.ModId("print")
 
     val facing: DirectionProperty = Properties.HORIZONTAL_FACING
     val on: BooleanProperty = BooleanProperty.of("on")

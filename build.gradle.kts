@@ -36,7 +36,7 @@ val modMenuVersion: String by project
 
 val scLibraryVersion: String by project
 
-val archivesBaseName = "sc-peripherals"
+val archivesBaseName = "lcc-peripherals"
 version = modVersion
 group = mavenGroup
 
@@ -148,7 +148,7 @@ tasks {
   }
 
   loom {
-    accessWidenerPath.set(file("src/main/resources/sc-peripherals.accesswidener"))
+    accessWidenerPath.set(file("src/main/resources/lcc-peripherals.accesswidener"))
 
     sourceSets {
       main {

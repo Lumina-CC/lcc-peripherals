@@ -18,7 +18,7 @@ data class PosterRequestC2SPacket(
   override val id = PosterRequestC2SPacket.id
 
   companion object {
-    val id = ScPeripherals.ModId("poster_request")
+    val id = ScPeripherals.INSTANCE.ModId("poster_request")
 
     private val requestCounter = Counter.build()
       .name("sc_peripherals_posters_requested")

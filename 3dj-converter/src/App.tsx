@@ -17,7 +17,7 @@ export function App(): JSX.Element {
       Texture names will automatically be converted for vanilla textures from
       their 1.12.2 names to their equivalent 1.20.1 names. The texture
       name <Code>opencomputers:blocks/white</Code> will also be converted
-      to <Code>sc-peripherals:block/white</Code>.
+      to <Code>lcc-peripherals:block/white</Code>.
     </Paragraph>
 
     <Converter />

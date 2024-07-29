@@ -11,7 +11,7 @@
       "entries": [
         {
           "type": "minecraft:dynamic",
-          "name": "sc-peripherals:print"
+          "name": "lcc-peripherals:print"
         }
       ],
       "rolls": 1.0

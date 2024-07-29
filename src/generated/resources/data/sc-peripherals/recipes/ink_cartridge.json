@@ -30,7 +30,7 @@
     "III"
   ],
   "result": {
-    "item": "sc-peripherals:ink_cartridge"
+    "item": "lcc-peripherals:ink_cartridge"
   },
   "show_notification": true
 }

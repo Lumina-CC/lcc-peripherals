@@ -33,7 +33,7 @@
     "MYK"
   ],
   "result": {
-    "item": "sc-peripherals:texture_analyzer"
+    "item": "lcc-peripherals:texture_analyzer"
   },
   "show_notification": true
 }

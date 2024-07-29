@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "sc-peripherals:block/chamelium"
+    "all": "lcc-peripherals:block/chamelium"
   }
 }

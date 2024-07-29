@@ -11,11 +11,11 @@ object ScPeripheralsClientConfig {
   }
 
   internal val config by lazy {
-    val dir = FabricLoader.getInstance().configDir.resolve("switchcraft")
+    val dir = FabricLoader.getInstance().configDir.resolve("luminacc")
     dir.toFile().mkdirs()
 
     val conf = CommentedFileConfig
-      .builder(dir.resolve("sc-peripherals-client.toml"))
+      .builder(dir.resolve("lcc-peripherals-client.toml"))
       .autosave()
       .build()
 

@@ -5,7 +5,7 @@ import io.sc3.library.ext.optCompound
 import io.sc3.library.networking.NetworkUtil.sendToAllTracking
 import io.sc3.peripherals.Registration.ModBlockEntities.posterPrinter
 import io.sc3.peripherals.Registration.ModItems
-import io.sc3.peripherals.config.ScPeripheralsConfig.config
+import io.sc3.peripherals.config.ScPeripheralsConfig
 import io.sc3.peripherals.posters.PosterItem
 import io.sc3.peripherals.posters.PosterItem.Companion.POSTER_KEY
 import io.sc3.peripherals.posters.PosterPrintData
@@ -50,6 +50,7 @@ class PosterPrinterBlockEntity(
   var animatingPosterId: String? = null
   var animationStartTime: Long = 0
   var animationTicks: Long = 0
+  var config = ScPeripheralsConfig.getConfig();
 
   var data: PosterPrintData = PosterPrintData(
     null, null, ByteArray(128*128)
@@ -319,7 +320,7 @@ class PosterPrinterBlockEntity(
 
     val downSideSlots = intArrayOf(OUTPUT_SLOT, INK_SLOT) // allow extracting output prints and empty ink cartridges
     val otherSideSlots = intArrayOf(PAPER_SLOT, INK_SLOT)
-
+    var config = ScPeripheralsConfig.getConfig();
     val inkValue: Int = config.get("printer.ink_value")
 
     fun onTick(world: World, pos: BlockPos, state: BlockState, be: PosterPrinterBlockEntity) {

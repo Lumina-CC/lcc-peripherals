@@ -28,7 +28,7 @@
     "ICI"
   ],
   "result": {
-    "item": "sc-peripherals:printer"
+    "item": "lcc-peripherals:printer"
   },
   "show_notification": true
 }

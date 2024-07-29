@@ -6,7 +6,7 @@
         "items": [
           {
             "items": [
-              "sc-peripherals:printer"
+              "lcc-peripherals:printer"
             ]
           }
         ]
@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "sc-peripherals:texture_analyzer"
+        "recipe": "lcc-peripherals:texture_analyzer"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "sc-peripherals:texture_analyzer"
+      "lcc-peripherals:texture_analyzer"
     ]
   },
   "sends_telemetry_event": false

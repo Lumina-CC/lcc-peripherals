@@ -6,7 +6,7 @@
         "items": [
           {
             "items": [
-              "sc-peripherals:print"
+              "lcc-peripherals:print"
             ]
           }
         ]
@@ -18,7 +18,7 @@
         "items": [
           {
             "items": [
-              "sc-peripherals:printer"
+              "lcc-peripherals:printer"
             ]
           }
         ]
@@ -27,7 +27,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "sc-peripherals:print"
+        "recipe": "lcc-peripherals:print"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -41,7 +41,7 @@
   ],
   "rewards": {
     "recipes": [
-      "sc-peripherals:print"
+      "lcc-peripherals:print"
     ]
   },
   "sends_telemetry_event": true

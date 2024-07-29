@@ -2,7 +2,7 @@ package io.sc3.peripherals.posters
 
 import io.sc3.library.ext.optString
 import io.sc3.library.ext.putOptString
-import io.sc3.peripherals.config.ScPeripheralsConfig.config
+import io.sc3.peripherals.config.ScPeripheralsConfig
 import io.sc3.peripherals.mixin.MapColorAccessor
 import io.sc3.peripherals.posters.PosterItem.Companion.POSTER_KEY
 import net.minecraft.block.MapColor
@@ -73,7 +73,7 @@ data class PosterPrintData(
   }
 
   companion object {
-    val posterInkCost: Int = config.get("poster_printer.ink_cost")
+    val posterInkCost: Int = ScPeripheralsConfig.getConfig().get("poster_printer.ink_cost")
 
     fun fromNbt(nbt: NbtCompound) = PosterPrintData(
       initialLabel = nbt.optString("label")?.takeIf { it.isValidLabel() },

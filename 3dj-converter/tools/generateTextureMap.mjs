@@ -6,7 +6,7 @@
 // 1.19: `assets/minecraft/textures/block`
 
 const mapping = {
-  "opencomputers:blocks/white": "sc-peripherals:block/white",
+  "opencomputers:blocks/white": "lcc-peripherals:block/white",
 };
 
 const manualMapping = {

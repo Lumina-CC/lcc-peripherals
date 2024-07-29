@@ -35,7 +35,7 @@ object ScPeripheralsClient : ClientModInitializer {
   private val log = LoggerFactory.getLogger("ScPeripherals/ScPeripheralsClient")!!
 
   override fun onInitializeClient() {
-    log.info("sc-peripherals client initializing")
+    log.info("lcc-peripherals client initializing")
 
     // Initialize the default config file if it does not yet exist
     ScPeripheralsClientConfig.config.load()

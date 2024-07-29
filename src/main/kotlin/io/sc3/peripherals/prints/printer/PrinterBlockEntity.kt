@@ -5,7 +5,7 @@ import io.sc3.library.ext.optCompound
 import io.sc3.library.networking.NetworkUtil.sendToAllTracking
 import io.sc3.peripherals.Registration.ModBlockEntities.printer
 import io.sc3.peripherals.Registration.ModItems
-import io.sc3.peripherals.config.ScPeripheralsConfig.config
+import io.sc3.peripherals.config.ScPeripheralsConfig
 import io.sc3.peripherals.prints.PrintData
 import io.sc3.peripherals.prints.PrintItem
 import io.sc3.peripherals.util.BaseBlockEntity
@@ -42,6 +42,7 @@ class PrinterBlockEntity(
   val computers: MutableSet<IComputerAccess> = Collections.newSetFromMap(ConcurrentHashMap())
 
   var data: PrintData = PrintData()
+  var config = ScPeripheralsConfig.getConfig();
   var printing = false
     set(value) {
       val oldValue = field
@@ -308,7 +309,7 @@ class PrinterBlockEntity(
   companion object {
     const val maxChamelium = 256000
     const val maxInk = 100000
-
+    var config = ScPeripheralsConfig.getConfig();
     val downSideSlots = intArrayOf(OUTPUT_SLOT, INK_SLOT) // allow extracting output prints and empty ink cartridges
     val otherSideSlots = intArrayOf(CHAMELIUM_SLOT, INK_SLOT)
 

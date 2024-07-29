@@ -1,7 +1,7 @@
 package io.sc3.peripherals.posters.printer
 
 import io.sc3.library.networking.ScLibraryPacket
-import io.sc3.peripherals.ScPeripherals.ModId
+import io.sc3.peripherals.ScPeripherals
 import net.fabricmc.fabric.api.networking.v1.PacketSender
 import net.minecraft.client.MinecraftClient
 import net.minecraft.client.network.ClientPlayNetworkHandler
@@ -15,7 +15,7 @@ data class PosterPrinterStartPrintPacket(
   override val id = PosterPrinterStartPrintPacket.id
 
   companion object {
-    val id = ModId("poster_printer_start_print")
+    val id = ScPeripherals.INSTANCE.ModId("poster_printer_start_print")
 
     fun fromBytes(buf: PacketByteBuf) = PosterPrinterStartPrintPacket(
       pos = buf.readBlockPos(),

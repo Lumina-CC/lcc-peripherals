@@ -1,7 +1,7 @@
 package io.sc3.peripherals.client.item
 
 import io.sc3.peripherals.Registration.ModItems
-import io.sc3.peripherals.ScPeripherals.ModId
+import io.sc3.peripherals.ScPeripherals
 import io.sc3.peripherals.posters.PosterItem.Companion.getPosterId
 import io.sc3.peripherals.posters.PosterItem.Companion.getPosterState
 import io.sc3.peripherals.posters.PosterState
@@ -23,7 +23,7 @@ import org.joml.Matrix4f
 
 @Environment(EnvType.CLIENT)
 object PosterRenderer : AutoCloseable {
-  val POSTER_BACKGROUND_RES = ModId("textures/item/poster_background.png")
+  val POSTER_BACKGROUND_RES = ScPeripherals.INSTANCE.ModId("textures/item/poster_background.png")
   private val POSTER_BACKGROUND: RenderLayer = RenderLayer.getText(POSTER_BACKGROUND_RES)
 
   private val textureManager get() = MinecraftClient.getInstance().textureManager

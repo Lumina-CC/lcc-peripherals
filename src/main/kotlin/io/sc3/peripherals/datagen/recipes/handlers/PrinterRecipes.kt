@@ -5,7 +5,7 @@ import dan200.computercraft.api.ComputerCraftTags
 import io.sc3.library.recipe.BetterComplexRecipeJsonBuilder
 import io.sc3.library.recipe.RecipeHandler
 import io.sc3.peripherals.Registration.ModItems
-import io.sc3.peripherals.ScPeripherals.ModId
+import io.sc3.peripherals.ScPeripherals
 import io.sc3.peripherals.datagen.recipes.inventoryChange
 import io.sc3.peripherals.prints.PrintRecipe
 import net.fabricmc.fabric.api.recipe.v1.ingredient.DefaultCustomIngredients
@@ -25,7 +25,7 @@ import java.util.function.Consumer
 
 object PrinterRecipes : RecipeHandler {
   override fun registerSerializers() {
-    register(RECIPE_SERIALIZER, ModId("print"), PrintRecipe.recipeSerializer)
+    register(RECIPE_SERIALIZER, ScPeripherals.INSTANCE.ModId("print"), PrintRecipe.recipeSerializer)
   }
 
   override fun generateRecipes(exporter: Consumer<RecipeJsonProvider>) {
@@ -98,7 +98,7 @@ object PrinterRecipes : RecipeHandler {
       .input('B', Items.BUCKET)
       .input('I', ConventionalItemTags.IRON_INGOTS)
       .criterion("has_printer", inventoryChange(ModItems.printer))
-      .offerTo(exporter, ModId("ink_cartridge"))
+      .offerTo(exporter, ScPeripherals.INSTANCE.ModId("ink_cartridge"))
 
     ShapelessRecipeJsonBuilder
       .create(RecipeCategory.MISC, ModItems.inkCartridge, 1)
@@ -108,7 +108,7 @@ object PrinterRecipes : RecipeHandler {
       .input(ConventionalItemTags.YELLOW_DYES)
       .input(ConventionalItemTags.BLACK_DYES)
       .criterion("has_printer", inventoryChange(ModItems.printer))
-      .offerTo(exporter, ModId("ink_cartridge_refill"))
+      .offerTo(exporter, ScPeripherals.INSTANCE.ModId("ink_cartridge_refill"))
 
     ShapedRecipeJsonBuilder
       .create(RecipeCategory.MISC, ModItems.textureAnalyzer, 1)

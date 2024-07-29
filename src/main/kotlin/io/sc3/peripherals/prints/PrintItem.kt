@@ -3,7 +3,7 @@ package io.sc3.peripherals.prints
 import io.sc3.library.ext.optCompound
 import io.sc3.peripherals.Registration.ModBlocks
 import io.sc3.peripherals.Registration.ModItems
-import io.sc3.peripherals.ScPeripherals.ModId
+import io.sc3.peripherals.ScPeripherals
 import io.sc3.peripherals.ScPeripherals.modId
 import net.minecraft.client.item.TooltipContext
 import net.minecraft.item.BlockItem
@@ -35,7 +35,7 @@ class PrintItem(settings: Settings) : BlockItem(ModBlocks.print, settings) {
   }
 
   companion object {
-    val id = ModId("item/print")
+    val id = ScPeripherals.INSTANCE.ModId("item/print")
 
     fun printData(stack: ItemStack): PrintData =
       stack.orCreateNbt.optCompound("data")?.let { PrintData.fromNbt(it) } ?: PrintData()

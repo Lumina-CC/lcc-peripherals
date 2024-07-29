@@ -2,11 +2,11 @@
 	"credit": "Made with Blockbench. Based on https://github.com/MightyPirates/OpenComputers",
 	"parent": "block/block",
 	"textures": {
-		"particle": "sc-peripherals:block/printer_bottom",
-		"bottom": "sc-peripherals:block/printer_bottom",
-		"top": "sc-peripherals:block/printer_top",
-		"side": "sc-peripherals:block/printer_side",
-		"front": "sc-peripherals:block/printer_front"
+		"particle": "lcc-peripherals:block/printer_bottom",
+		"bottom": "lcc-peripherals:block/printer_bottom",
+		"top": "lcc-peripherals:block/printer_top",
+		"side": "lcc-peripherals:block/printer_side",
+		"front": "lcc-peripherals:block/printer_front"
 	},
 	"elements": [
 		{

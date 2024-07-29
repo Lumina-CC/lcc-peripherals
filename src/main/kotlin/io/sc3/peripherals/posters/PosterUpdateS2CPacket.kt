@@ -15,7 +15,7 @@ data class PosterUpdateS2CPacket(
   override val id = PosterUpdateS2CPacket.id
 
   companion object {
-    val id = ScPeripherals.ModId("poster_update")
+    val id = ScPeripherals.INSTANCE.ModId("poster_update")
 
     fun fromBytes(buf: PacketByteBuf) = buf.run {
       PosterUpdateS2CPacket(

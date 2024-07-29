@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "id": "sc-peripherals",
+  "id": "lcc-peripherals",
   "version": "${version}",
 
   "name": "SwitchCraft Peripherals",
@@ -32,10 +32,7 @@
 
   "entrypoints": {
     "main": [
-      {
-        "adapter": "kotlin",
-        "value": "io.sc3.peripherals.ScPeripherals"
-      }
+        "io.sc3.peripherals.ScPeripherals"
     ],
     "client": [
       {
@@ -54,9 +51,9 @@
     ]
   },
   "mixins": [
-    "sc-peripherals.mixins.json"
+    "lcc-peripherals.mixins.json"
   ],
-  "accessWidener": "sc-peripherals.accesswidener",
+  "accessWidener": "lcc-peripherals.accesswidener",
   "depends": {
     "fabricloader": ">=${loader_version}",
     "fabric-api": "*",
@@ -65,5 +62,8 @@
     "fabric-language-kotlin": ">=${fabric_kotlin_version}",
     "computercraft": "${cc_target_version}",
     "sc-library": "1.x"
+  },
+  "conflicts": {
+    "sc-peripherals": "*"
   }
 }

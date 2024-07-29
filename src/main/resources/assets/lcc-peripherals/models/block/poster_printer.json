@@ -3,8 +3,8 @@
   "parent": "block/block",
   "texture_size": [64, 64],
   "textures": {
-    "particle": "sc-peripherals:block/poster_printer",
-    "0": "sc-peripherals:block/poster_printer"
+    "particle": "lcc-peripherals:block/poster_printer",
+    "0": "lcc-peripherals:block/poster_printer"
   },
   "elements": [
     {

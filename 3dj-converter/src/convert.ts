@@ -69,7 +69,7 @@ export function convert(original: string): ConversionResults {
         if (texture === "") {
           texture = null;
         } else if (typeof texture !== "string") {
-          texture = "sc-peripherals:block/white";
+          texture = "lcc-peripherals:block/white";
         }
 
         // Attempts to convert vanilla 1.12 texture names to 1.13+ texture names

@@ -3,7 +3,7 @@ package io.sc3.peripherals.prints
 import io.sc3.library.ext.optBoolean
 import io.sc3.library.ext.optString
 import io.sc3.library.ext.putOptString
-import io.sc3.peripherals.config.ScPeripheralsConfig.config
+import io.sc3.peripherals.config.ScPeripheralsConfig
 import net.fabricmc.fabric.api.util.NbtType.COMPOUND
 import net.minecraft.SharedConstants
 import net.minecraft.nbt.NbtCompound
@@ -14,6 +14,7 @@ import net.minecraft.util.shape.VoxelShape
 
 const val MAX_LABEL_LENGTH = 48
 const val MAX_TOOLTIP_LENGTH = 256
+var config = ScPeripheralsConfig.getConfig();
 
 data class PrintData(
   private val initialLabel: String? = null,

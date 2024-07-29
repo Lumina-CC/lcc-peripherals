@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "sc-peripherals:block/chamelium"
+      "model": "lcc-peripherals:block/chamelium"
     }
   }
 }

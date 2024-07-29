@@ -2,7 +2,6 @@ package io.sc3.peripherals
 
 import dan200.computercraft.api.peripheral.PeripheralLookup
 import io.sc3.library.networking.registerServerReceiver
-import io.sc3.peripherals.ScPeripherals.ModId
 import io.sc3.peripherals.ScPeripherals.modId
 import io.sc3.peripherals.block.ChameliumBlock
 import io.sc3.peripherals.datagen.recipes.handlers.RecipeHandlers
@@ -45,8 +44,7 @@ import net.minecraft.util.math.BlockPos
 
 object Registration {
   private val items = mutableListOf<Item>()
-  private val itemGroup = RegistryKey.of(RegistryKeys.ITEM_GROUP, ModId("main"))
-
+  private val itemGroup = RegistryKey.of(RegistryKeys.ITEM_GROUP, ScPeripherals.INSTANCE.ModId("main"))
   internal fun init() {
     register(ITEM_GROUP, itemGroup, FabricItemGroup.builder()
       .displayName(Text.translatable("itemGroup.$modId.main"))
@@ -80,7 +78,7 @@ object Registration {
     val chamelium = rBlock("chamelium", ChameliumBlock(settings()))
 
     private fun <T : Block> rBlock(name: String, value: T): T =
-      register(BLOCK, ModId(name), value)
+      register(BLOCK, ScPeripherals.INSTANCE.ModId(name), value)
 
     private fun settings() = AbstractBlock.Settings.create()
       .mapColor(MapColor.STONE_GRAY)
@@ -102,7 +100,7 @@ object Registration {
     val textureAnalyzer = rItem("texture_analyzer", TextureAnalyzerItem(settings().maxCount(1)))
 
     private fun <T : Item> rItem(name: String, value: T, addItem: Boolean = true): T =
-      register(ITEM, ModId(name), value).also { items.takeIf { addItem }?.add(it) }
+      register(ITEM, ScPeripherals.INSTANCE.ModId(name), value).also { items.takeIf { addItem }?.add(it) }
     private fun <B : Block, I : Item> ofBlock(parent: B, supplier: (B, Item.Settings) -> I): I =
       register(ITEM, BLOCK.getId(parent), supplier(parent, settings())).also { items.add(it) }
     private fun settings() = Item.Settings()
@@ -119,14 +117,14 @@ object Registration {
     private fun <T : BlockEntity> ofBlock(block: Block, name: String,
                                           factory: (BlockPos, BlockState) -> T): BlockEntityType<T> {
       val blockEntityType = FabricBlockEntityTypeBuilder.create(factory, block).build()
-      return register(BLOCK_ENTITY_TYPE, ModId(name), blockEntityType)
+      return register(BLOCK_ENTITY_TYPE, ScPeripherals.INSTANCE.ModId(name), blockEntityType)
     }
   }
 
   object ModScreens {
-    val printer: ScreenHandlerType<PrinterScreenHandler> = register(SCREEN_HANDLER, ModId("printer"),
+    val printer: ScreenHandlerType<PrinterScreenHandler> = register(SCREEN_HANDLER, ScPeripherals.INSTANCE.ModId("printer"),
       ScreenHandlerType(::PrinterScreenHandler, FeatureFlags.VANILLA_FEATURES))
-    val posterPrinter: ExtendedScreenHandlerType<PosterPrinterScreenHandler> = register(SCREEN_HANDLER, ModId("poster_printer"),
+    val posterPrinter: ExtendedScreenHandlerType<PosterPrinterScreenHandler> = register(SCREEN_HANDLER, ScPeripherals.INSTANCE.ModId("poster_printer"),
       ExtendedScreenHandlerType(::PosterPrinterScreenHandler))
   }
 }

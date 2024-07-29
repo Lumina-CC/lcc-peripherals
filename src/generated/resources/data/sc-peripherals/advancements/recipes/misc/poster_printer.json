@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "sc-peripherals:poster_printer"
+        "recipe": "lcc-peripherals:poster_printer"
       },
       "trigger": "minecraft:recipe_unlocked"
     },
@@ -37,7 +37,7 @@
   ],
   "rewards": {
     "recipes": [
-      "sc-peripherals:poster_printer"
+      "lcc-peripherals:poster_printer"
     ]
   },
   "sends_telemetry_event": false

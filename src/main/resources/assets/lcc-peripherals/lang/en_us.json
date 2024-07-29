@@ -1,0 +1,34 @@
+{
+  "itemGroup.lcc-peripherals.main": "Lumina CC Peripherals",
+
+  "block.lcc-peripherals.printer": "3D Printer",
+  "block.lcc-peripherals.printer.desc": "Prints custom 3D models from a computer.",
+
+  "block.lcc-peripherals.poster_printer": "Wide Format Printer",
+  "block.lcc-peripherals.poster_printer.desc": "Prints custom posters from a computer.",
+
+  "gui.lcc-peripherals.printer.title": "3D Printer",
+  "gui.lcc-peripherals.printer.chamelium": "Chamelium: %d/%d",
+  "gui.lcc-peripherals.printer.ink": "Ink: %d/%d",
+
+  "item.lcc-peripherals.chamelium": "Chamelium",
+  "item.lcc-peripherals.chamelium.desc": "Raw material for 3D prints.",
+  "item.lcc-peripherals.ink_cartridge": "Ink Cartridge",
+  "item.lcc-peripherals.ink_cartridge.desc": "Ink for 3D prints and posters.",
+  "item.lcc-peripherals.empty_ink_cartridge": "Ink Cartridge (empty)",
+  "item.lcc-peripherals.empty_ink_cartridge.desc": "May be refilled using dyes to use for 3D prints and posters.",
+  "item.lcc-peripherals.texture_analyzer": "Texture Analyzer",
+  "item.lcc-peripherals.texture_analyzer.desc": "Hand-held device that can list the textures of a block when right clicked, which may help with creating 3D prints.",
+  "item.lcc-peripherals.texture_analyzer.title": "Textures for %s (click to copy):",
+  "item.lcc-peripherals.texture_analyzer.copy": "Click to copy to clipboard",
+  "item.lcc-peripherals.texture_analyzer.no_textures": "No textures found for %s - some custom models are not yet supported, sorry!",
+  "item.lcc-peripherals.poster": "Poster",
+  "item.lcc-peripherals.poster.unknown": "Unknown Poster",
+  "item.lcc-peripherals.poster.id": "Id #%s",
+
+  "block.lcc-peripherals.print": "3D Print",
+  "block.lcc-peripherals.print.beacon_base": "Works as a beacon base.",
+  "block.lcc-peripherals.print.quiet": "Silent when toggling state.",
+  "block.lcc-peripherals.print.redstone_level": "Redstone output: %d",
+  "block.lcc-peripherals.print.light_level": "Light emitted: %d"
+}

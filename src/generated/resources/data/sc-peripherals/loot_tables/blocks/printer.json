@@ -11,7 +11,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "sc-peripherals:printer"
+          "name": "lcc-peripherals:printer"
         }
       ],
       "rolls": 1.0

@@ -1,8 +1,8 @@
 {
   "replace": false,
   "values": [
-    "sc-peripherals:print",
-    "sc-peripherals:printer",
-    "sc-peripherals:poster_printer"
+    "lcc-peripherals:print",
+    "lcc-peripherals:printer",
+    "lcc-peripherals:poster_printer"
   ]
 }

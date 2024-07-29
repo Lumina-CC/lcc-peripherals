@@ -1,6 +1,6 @@
 package io.sc3.peripherals.client.block
 
-import io.sc3.peripherals.ScPeripherals.ModId
+import io.sc3.peripherals.ScPeripherals
 import io.sc3.peripherals.client.gui.PosterPrinterScreen.Companion.tex
 import io.sc3.peripherals.client.item.PosterRenderer
 import io.sc3.peripherals.posters.PosterItem
@@ -25,7 +25,7 @@ import org.joml.Matrix4f
 private const val ROLLER_OFFSET_TICKS = 9 // 45 degrees
 
 object PosterPrinterRenderer : BlockEntityRenderer<PosterPrinterBlockEntity> {
-  private val texture = ModId("textures/entity/poster_printer.png")
+  private val texture = ScPeripherals.INSTANCE.ModId("textures/entity/poster_printer.png")
   private val layer = RenderLayer.getEntityCutout(texture)
 
   override fun render(entity: PosterPrinterBlockEntity, tickDelta: Float, matrices: MatrixStack,
