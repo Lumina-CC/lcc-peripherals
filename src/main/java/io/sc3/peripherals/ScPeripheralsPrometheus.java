@@ -50,8 +50,10 @@ public final class ScPeripheralsPrometheus {
   private static void init1(MinecraftServer it) {
     try {
       log.info("Stopping Prometheus server");
+      if(prometheusServer != null) {
         prometheusServer.close();
         prometheusServer = null;
+      }
     } catch (Exception var5) {
       log.error("Failed to stop Prometheus server", (Throwable)var5);
     }

@@ -14,7 +14,7 @@
   },
 
   "license": "MIT",
-  "icon": "assets/sc-peripherals/icon.png",
+  "icon": "assets/lcc-peripherals/icon.png",
 
   "custom": {
     "modmenu": {
