@@ -2,14 +2,17 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
+    "B": {
+      "item": "minecraft:bucket"
+    },
     "C": {
       "tag": "c:cyan_dyes"
     },
-    "E": {
-      "item": "minecraft:ender_eye"
+    "D": {
+      "item": "minecraft:dispenser"
     },
-    "G": {
-      "item": "minecraft:gold_block"
+    "I": {
+      "tag": "c:iron_ingots"
     },
     "K": {
       "tag": "c:black_dyes"
@@ -17,23 +20,17 @@
     "M": {
       "tag": "c:magenta_dyes"
     },
-    "P": {
-      "tag": "c:glass_panes"
-    },
-    "R": {
-      "tag": "c:redstone_dusts"
-    },
     "Y": {
       "tag": "c:yellow_dyes"
     }
   },
   "pattern": [
-    "GPE",
-    "RRC",
-    "MYK"
+    "CMY",
+    "KDB",
+    "III"
   ],
   "result": {
-    "item": "lcc-peripherals:texture_analyzer"
+    "item": "lcc-peripherals:ink_cartridge"
   },
   "show_notification": true
 }

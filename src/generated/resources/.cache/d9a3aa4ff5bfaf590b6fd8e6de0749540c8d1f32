@@ -1,14 +1,14 @@
-// 1.20.1	2023-06-17T18:06:45.8145772	SwitchCraft Peripherals/Model Definitions
-8dbbaa863281ec6d5346bbb37abf84eb8731a20c assets\sc-peripherals\models\item\print.json
-38e8581498a20fc01bbc1e3fde1f0a18a5fc7c68 assets\sc-peripherals\models\item\texture_analyzer.json
-e95b68c927fc894e94ac338c7ebe891991af709c assets\sc-peripherals\blockstates\poster_printer.json
-563010e043e291398785d27cdb2cd993810844a6 assets\sc-peripherals\models\item\empty_ink_cartridge.json
-43e57e5d9e2b08cd7a9bbb39b00355790cb8630c assets\sc-peripherals\blockstates\chamelium.json
-b2a877bab6197cb78794688b2eb6a9de987ef2c1 assets\sc-peripherals\models\item\printer.json
-18a469705977539427fbe8fa7326b1e2cc110928 assets\sc-peripherals\models\item\poster_printer.json
-9116f93a83aaef8f050cab10ecd5b7c5989a57fc assets\sc-peripherals\blockstates\printer.json
-830b8cd8fac20b4584e90d55c7eb4d40109e9f45 assets\sc-peripherals\blockstates\print.json
-a39bcc4beca21247e9be08bbcc80b1b0eb4efe4a assets\sc-peripherals\models\item\chamelium.json
-db3148f0b07b889e3e3da4f80f32162c2be64d0e assets\sc-peripherals\models\block\chamelium.json
-4db66f70476281d9beadb51b6387a3a4f12b5953 assets\sc-peripherals\models\item\poster.json
-392644a3b1b59f60c395810ec4bbdfa98e8d1ee3 assets\sc-peripherals\models\item\ink_cartridge.json
+// 1.20.1	2024-09-30T17:55:31.486030617	SwitchCraft Peripherals/Model Definitions
+13d4cd298e8f3708cbf66b4176792bfc776f3a17 assets/lcc-peripherals/models/item/print.json
+1a70b6829f863963c6c8d60fefbedcbda2d0fac0 assets/lcc-peripherals/blockstates/poster_printer.json
+0ff8bc6e64fa5e9a3dcaf8d3f84921a4378df927 assets/lcc-peripherals/models/item/chamelium.json
+befd0b88fc2ba6a405327421fdef08ffa4bb967b assets/lcc-peripherals/blockstates/print.json
+b82480414af7d0789c52e35cf49c1f5c95a24c02 assets/lcc-peripherals/models/block/chamelium.json
+ea9f0b28b12e3cd3bd628dc388cd8ce1df5dc5be assets/lcc-peripherals/blockstates/printer.json
+4084948a29e18992a748307f02f762d43ec63cbb assets/lcc-peripherals/models/item/poster.json
+311d3d095cebf8f622c65064649df4fe7a12bcf5 assets/lcc-peripherals/models/item/empty_ink_cartridge.json
+a60d1b0d0dd8ee88b2fd8e42b70cf9756727db2a assets/lcc-peripherals/models/item/ink_cartridge.json
+bb1b9982aea7e6b51092489d9aabe4df239fb917 assets/lcc-peripherals/blockstates/chamelium.json
+69c3be53be675f05cff5e3a74f12e0d3ee288c2e assets/lcc-peripherals/models/item/poster_printer.json
+1154184b7b8450e2abda3d9bdba77e95d021f987 assets/lcc-peripherals/models/item/printer.json
+2cdb93ccde6920055b2cb8e004df5cbcc8743711 assets/lcc-peripherals/models/item/texture_analyzer.json

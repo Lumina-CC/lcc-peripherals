@@ -1,11 +1,13 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_computer": {
+    "has_printer": {
       "conditions": {
         "items": [
           {
-            "tag": "computercraft:computer"
+            "items": [
+              "lcc-peripherals:printer"
+            ]
           }
         ]
       },
@@ -13,31 +15,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "lcc-peripherals:poster_printer"
+        "recipe": "lcc-peripherals:ink_cartridge"
       },
       "trigger": "minecraft:recipe_unlocked"
-    },
-    "has_turtle": {
-      "conditions": {
-        "items": [
-          {
-            "tag": "computercraft:turtle"
-          }
-        ]
-      },
-      "trigger": "minecraft:inventory_changed"
     }
   },
   "requirements": [
     [
-      "has_computer",
-      "has_turtle",
+      "has_printer",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "lcc-peripherals:poster_printer"
+      "lcc-peripherals:ink_cartridge"
     ]
   },
   "sends_telemetry_event": false

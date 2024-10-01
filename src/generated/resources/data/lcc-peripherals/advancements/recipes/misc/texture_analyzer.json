@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "lcc-peripherals:ink_cartridge"
+        "recipe": "lcc-peripherals:texture_analyzer"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "lcc-peripherals:ink_cartridge"
+      "lcc-peripherals:texture_analyzer"
     ]
   },
   "sends_telemetry_event": false

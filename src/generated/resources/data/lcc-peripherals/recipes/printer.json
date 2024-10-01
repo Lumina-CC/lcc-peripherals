@@ -12,26 +12,23 @@
     "D": {
       "item": "minecraft:diamond_block"
     },
+    "H": {
+      "item": "minecraft:hopper"
+    },
     "I": {
       "tag": "c:iron_ingots"
     },
-    "N": {
-      "item": "minecraft:nether_star"
-    },
-    "Q": {
-      "item": "minecraft:quartz_block"
-    },
-    "S": {
-      "item": "minecraft:stick"
+    "P": {
+      "item": "minecraft:sticky_piston"
     }
   },
   "pattern": [
-    "SNS",
-    "IDI",
-    "QCQ"
+    "IHI",
+    "PDP",
+    "ICI"
   ],
   "result": {
-    "item": "lcc-peripherals:poster_printer"
+    "item": "lcc-peripherals:printer"
   },
   "show_notification": true
 }

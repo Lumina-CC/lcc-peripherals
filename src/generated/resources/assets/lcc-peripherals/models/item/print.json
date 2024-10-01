@@ -1,6 +1,3 @@
 {
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "lcc-peripherals:item/poster"
-  }
+  "parent": "lcc-peripherals:block/print"
 }

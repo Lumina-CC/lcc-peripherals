@@ -1,18 +1,6 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_print": {
-      "conditions": {
-        "items": [
-          {
-            "items": [
-              "lcc-peripherals:print"
-            ]
-          }
-        ]
-      },
-      "trigger": "minecraft:inventory_changed"
-    },
     "has_printer": {
       "conditions": {
         "items": [
@@ -27,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "lcc-peripherals:print"
+        "recipe": "lcc-peripherals:ink_cartridge_refill"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -35,14 +23,13 @@
   "requirements": [
     [
       "has_printer",
-      "has_print",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "lcc-peripherals:print"
+      "lcc-peripherals:ink_cartridge_refill"
     ]
   },
-  "sends_telemetry_event": true
+  "sends_telemetry_event": false
 }
